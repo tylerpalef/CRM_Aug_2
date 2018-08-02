@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Bitmaker CRM</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Bitmaker CRM</h1>
+
+      <nav>
+        <ul class='nav-bar'>
+          <li><a href="/home">Home</a></li>
+          <li><a href="/contacts">Contacts</a></li>
+          <li><a href="#">Add a Contact (not live)</a></li>
+          <li><a href="/about">About</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <main>
+      <%= yield %>
+    </main>
+
+    <footer>
+      <p>&copy; Bitmaker 2018</p>
+    </footer>
+
+  </body>
+
+</html>

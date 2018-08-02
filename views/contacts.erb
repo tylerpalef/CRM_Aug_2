@@ -1,0 +1,19 @@
+<section class='contacts-display'>
+  <p class='contacts-msg'>There are <span id='contact-counter'><%= @contacts.count %></span> contacts</p>
+
+  <ul class='contact-list'>
+    <%@contacts.each do |contact| %>
+    <!-- In this new route, create an instance variable containing a collection of all the contacts in your database. -->
+      <li>
+        <p>
+          <a class ='contact-link' href="/contacts/<%=contact.id%>">
+            <%=contact.first_name.capitalize%> <%=contact.last_name.capitalize%>
+          </a>
+          (<%=contact.email%>)
+        </p>
+        <!-- In contacts.erb use this instance variable to iterate through the collection and display the first name, last name, email, and notes for each contact. What semantic HTML elements make sense to use when displaying this data? -->
+        <p class='mod-links'><a href="#">Edit</a> | <a href="#">Delete</a></p>
+      </li>
+    <%end%>
+  </ul>
+</section>

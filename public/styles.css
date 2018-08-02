@@ -1,0 +1,114 @@
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+header h1 {
+  font-size: 2em;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  padding: 10px 0;
+}
+
+.nav-bar li {
+  font-size: 1.4em;
+  display: block;
+  text-align: center;
+  background: #cecece;
+  margin-bottom: 1px;
+  padding: 10px;
+}
+
+.nav-bar li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  font-size: 0.8em;
+  padding: 15px;
+}
+
+#contact-counter {
+  font-weight: 700;
+  border-bottom: 5px solid #31d8cd;
+}
+
+.contacts-display {
+  margin: 10px 20px;
+}
+
+.contacts-msg {
+  background: #e0dac9;
+  font-size: 1.3em;
+  padding: 10px;
+}
+
+.contact-list li {
+  background: #31d8cd;
+  margin: 10px 0px;
+  padding: 25px;
+  font-weight: 700;
+  font-size: 1.3em;
+}
+
+.mod-links {
+  font-size: 0.7em;
+  margin-top: 4px;
+}
+
+.contact-list a:visited {
+  color: black;
+}
+
+.contact-list a:hover {
+  color: grey;
+}
+
+.contact-info {
+  background: #gold;
+  margin: 10px 15px;
+  padding: 10px 10px;
+}
+
+.contact-info h1 {
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.welcome {
+  background: #e0dac9;
+  margin: 10px 10px;
+  padding: 10px 10px;
+  text-align: center;
+}
+
+.welcome h1 {
+  font-size: 1.5em;
+}
+
+.welcome h2 {
+  text-align: left;
+  margin-top: 5px;
+}
+
+.about-me {
+  background: #e0dac9;
+  margin: 10px 10px;
+  padding: 10px 10px;
+}
+
+.about-me h1 {
+  font-size: 1.5em;
+  font-weight: 700;
+  border-bottom: 2px solid black;
+}
+
+.about-me p {
+  margin: 7px 0px;
+}
