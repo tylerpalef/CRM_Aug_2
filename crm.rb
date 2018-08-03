@@ -85,6 +85,16 @@ get '/about' do
   erb :about
 end
 
+delete '/contacts/:id' do
+  @contact = Contact.find_by(params[:id].to_i)
+  if @contact
+    @contact.delete
+    redirect to('/contacts')
+  else
+    raise Sinatra::NotFound
+  end
+end
+
 after do
   ActiveRecord::Base.connection.close
 end

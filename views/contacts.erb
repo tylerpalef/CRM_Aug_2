@@ -12,7 +12,7 @@
           (<%=contact.email%>)
         </p>
         <!-- In contacts.erb use this instance variable to iterate through the collection and display the first name, last name, email, and notes for each contact. What semantic HTML elements make sense to use when displaying this data? -->
-        <p class='mod-links'><a href="#">Edit</a> | <a href="#">Delete</a></p>
+        <p class='mod-links'><a href="/contacts/<%=contact.id%>/edit">Edit</a> | <a href="/contacts/<%=contact.id %>">Delete</a></p>
       </li>
     <%end%>
   </ul>
