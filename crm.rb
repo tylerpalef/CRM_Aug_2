@@ -9,9 +9,24 @@ get '/home' do
   erb :index
 end
 
+
 get '/contacts' do
   @contacts = Contact.all
   erb :contacts
+end
+
+get '/new' do
+  erb :new
+end
+
+post '/contacts' do
+  Contact.create(
+    first_name: params[:first_name],
+    last_name:  params[:last_name],
+    email:      params[:email],
+    note:       params[:note]
+  )
+    redirect to('/contacts')
 end
 
 get '/contacts/:id' do
@@ -27,10 +42,6 @@ end
 
 get '/about' do
   erb :about
-end
-
-get '/new' do
-  erb :new
 end
 
 after do
